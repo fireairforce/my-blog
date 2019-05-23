@@ -9,7 +9,7 @@ export default {
       dva: true,
       dynamicImport: {
         webpackChunkName: true,
-        loadingComponent :'/components/plugins/Loading',
+        loadingComponent :'/components/plugin/Loading',
         level:1
       },
       title: "zoomdong's blog",
