@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-- "10"
+- '10'
 cache: npm
-before_install: 
-- openssl aes-256-cbc -K $encrypted_0a6446eb3ae3_key -iv $encrypted_0a6446eb3ae3_key 
-  -in .travis.enc -out push.config.js -d
 script:
 - npm run push
-branches: 
-  only: 
-  - master 
+branches:
+  only:
+  - master
+before_install:
+- openssl aes-256-cbc -K $encrypted_aecec397e0d1_key -iv $encrypted_aecec397e0d1_iv
+  -in .travis.enc -out push.config.js -d
