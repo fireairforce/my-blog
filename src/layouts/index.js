@@ -1,12 +1,14 @@
-import styles from './index.css';
+import './index.css'
+import Header from './header'
 
-function BasicLayout(props) {
-  return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to umi!</h1>
-      {props.children}
-    </div>
-  );
+export default function (props) {
+  if (props.location.pathname === '/') {
+     return <div>{props.children}</div>      
+  }
+  return(
+      <>
+      <Header />
+       {props.children}
+      </>
+  )
 }
-
-export default BasicLayout;

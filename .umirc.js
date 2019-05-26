@@ -1,6 +1,6 @@
-const path = require('path');
+const path = require('path')
+
 export default {
-  treeShaking: true,
   disableCSSModules: true,
   ignoreMomentLocale: true,
   plugins: [
@@ -9,24 +9,19 @@ export default {
       dva: true,
       dynamicImport: {
         webpackChunkName: true,
-        loadingComponent :'/components/plugin/Loading',
-        level:1
+        loadingComponent: '/components/plugin/Loading',
+        level: 1
       },
       title: "zoomdong's blog",
       dll: false,
       routes: {
-        exclude: [
-          /models\//,
-          /services\//,
-          /model\.(t|j)sx?$/,
-          /service\.(t|j)sx?$/,
-          /components\//,
-        ],
+        exclude: [/model\.(j|t)sx?$/, /service\.(j|t)sx?$/, /models\//, /components\//, /services\//, /config\.(j|t)sx?$/]
       },
     }],
   ],
-  alias:{
-    utils: path.resolve(__dirname,'/src/utils'),
-    components: path.resolve(__dirname,'/src/components'),
+  alias: {
+    utils: path.resolve(__dirname, '/src/utils'),
+    components: path.resolve(__dirname, '/src/components'),
+    layouts:path.resolve(__dirname,'/src/layouts')
   }
 }
