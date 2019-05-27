@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'umi/link'
 import './index.less'
 class Home extends Component {
   constructor(props) {
@@ -1211,10 +1212,10 @@ class Home extends Component {
              <header>zoomdong's blog</header>
              <img src="http://wdlj.zoomdong.xin/logo.jpg" alt="logo-pic"/>
             </div> 
-            <h3>A FE coder and lover for Programming</h3>
+            <h3>A FE coder and lover for programming</h3>
             <div className="main-page-info-site">
               <font aria-hidden="true">»</font>
-              <a href=" ">Welcome to my blog</a>
+              <Link to='/home'>Welcome to my blog</Link>
             </div>
             <div className="main-page-info-site">
               <font aria-hidden="true">»</font>

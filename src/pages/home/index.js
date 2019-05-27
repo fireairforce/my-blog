@@ -2,7 +2,7 @@
 function Home(){
   return(
     <div>
-      这里是主页面
+      页面正在开发中。。。。
     </div>
   )
 }
