@@ -1212,6 +1212,14 @@ class Home extends Component {
              <img src="http://wdlj.zoomdong.xin/logo.jpg" alt="logo-pic"/>
             </div> 
             <h3>A FE coder and lover for Programming</h3>
+            <div className="main-page-info-site">
+              <font aria-hidden="true">»</font>
+              <a href=" ">Welcome to my blog</a>
+            </div>
+            <div className="main-page-info-site">
+              <font aria-hidden="true">»</font>
+              <a href="http://zoomdong.cn/">博客旧址</a>
+            </div>
         </div>
       </div>
     );
