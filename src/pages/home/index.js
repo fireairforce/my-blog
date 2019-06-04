@@ -1,9 +1,13 @@
+import { Fragment,useState } from 'react'
+import './index.less';
 
 function Home(){
   return(
-    <div>
-      页面正在开发中。。。。
-    </div>
+    <Fragment>
+      <header>
+        
+      </header>
+    </Fragment>
   )
 }
 
