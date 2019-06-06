@@ -1,14 +1,14 @@
-import { Fragment,useState } from 'react'
+import React, { Fragment } from 'react'
 import './index.less';
 
-function Home(){
-  return(
-    <Fragment>
-      <header>
-        
-      </header>
-    </Fragment>
-  )
+class Home extends React.Component{
+  render(){
+    return(
+      <Fragment>
+         
+      </Fragment>
+    )
+  }
 }
 
 export default Home;
