@@ -1,10 +1,8 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,withRouter } from 'react-router-dom';
 import { Menu,Icon } from 'antd';
 import './index.less';
 
-function Header(){
-    const [current,setCurrent] = useState('mail'); 
+function Header(props){
     return(
         <div className="layout-header">
             <div className="layout-header-container">
@@ -17,7 +15,7 @@ function Header(){
                   </div>
               </Link>
                 <div className="layout-header-container-nav">
-                  <Menu onClick={(e)=>{setCurrent(e.key)}} selectedKeys={[current]} mode="horizontal">
+                  <Menu selectedKeys={[props.location.pathname.slice(1)]} mode="horizontal">
                     <Menu.Item key="home">
                       <Link to='/home'>
                         <Icon 
@@ -57,4 +55,4 @@ function Header(){
     )
 }
 
-export default Header;
+export default withRouter(Header);

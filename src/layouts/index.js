@@ -1,4 +1,4 @@
-import './index.css'
+import './index.less'
 import Header from './header'
 
 export default function (props) {
@@ -6,9 +6,11 @@ export default function (props) {
      return <div>{props.children}</div>      
   }
   return(
-      <>
-      <Header />
+       <>
+       <Header />
+       <div className="content-top">
        {props.children}
+       </div>
       </>
   )
 }
