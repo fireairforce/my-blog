@@ -1,8 +1,13 @@
 import { Link,withRouter } from 'react-router-dom';
 import { Menu,Icon } from 'antd';
+import { Popover } from 'antd-mobile';
+import { useState } from 'react';
 import './index.less';
 
+const Item = Popover.Item;
+
 function Header(props){
+    const [ visible,setVisible ] = useState(false);
     return(
         <div className="layout-header">
             <div className="layout-header-container">
@@ -50,7 +55,28 @@ function Header(props){
                     </Menu.Item>
                   </Menu>
                 </div>
+                <div className="layout-header-container-navM">
+                    <Popover mask
+                      overlayClassName="fortest"
+    
+                      visible={visible}
+                      overlay={[
+                        (<Item key="home" value="home">首页</Item>),
+                        (<Item key="catalog" value="catalog">存档</Item>),
+                        (<Item key="link" value="link" >友链 </Item>),
+                        (<Item key="about" value="about">关于</Item>),
+                      ]}
+                      align={{
+                        overflow: { adjustY: 0, adjustX: 0 },
+                        offset: [0, 5],
+                      }}
+                      onVisibleChange={()=>{setVisible(true)}}
+                    >
+                     <Icon type="bars" className="icon-style"/>
+                   </Popover>
+                </div>
             </div>   
+            
         </div>
     )
 }
