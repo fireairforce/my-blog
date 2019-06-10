@@ -56,9 +56,8 @@ function Header(props){
                   </Menu>
                 </div>
                 <div className="layout-header-container-navM">
-                    <Popover mask
+                    <Popover 
                       overlayClassName="fortest"
-    
                       visible={visible}
                       overlay={[
                         (<Item key="home" value="home">首页</Item>),
@@ -71,6 +70,9 @@ function Header(props){
                         offset: [0, 5],
                       }}
                       onVisibleChange={()=>{setVisible(true)}}
+                      onSelect={(e)=>{
+                        props.history.push(`/${e.props.value}`)
+                      }}
                     >
                      <Icon type="bars" className="icon-style"/>
                    </Popover>
