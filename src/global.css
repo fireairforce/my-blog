@@ -1,6 +1,9 @@
 
 html, body, #root {
   height: 100%;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {

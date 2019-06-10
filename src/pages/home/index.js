@@ -1,10 +1,14 @@
+import React, { Fragment } from 'react'
+import './index.less';
 
-function Home(){
-  return(
-    <div>
-      页面正在开发中。。。。
-    </div>
-  )
+class Home extends React.Component{
+  render(){
+    return(
+      <Fragment>
+         
+      </Fragment>
+    )
+  }
 }
 
 export default Home;

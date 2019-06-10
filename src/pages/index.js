@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import Link from 'umi/link'
-import './index.less'
+import React, { Component } from 'react';
+import Link from 'umi/link';
+import { Icon } from 'antd';
+import './index.less';
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -1215,12 +1216,15 @@ class Home extends Component {
             <h3>A FE coder and lover for programming</h3>
             <div className="main-page-info-site">
               <font aria-hidden="true">»</font>
-              <Link to='/home'>Welcome to my blog</Link>
+              <Link to='/home'><Icon type='home'/> Welcome to my blog</Link>
             </div>
             <div className="main-page-info-site">
               <font aria-hidden="true">»</font>
-              <a href="http://zoomdong.cn/">博客旧址</a>
+              <a href="http://zoomdong.cn/" target='__blank'><Icon type='shop'/> 博客旧址</a>
             </div>
+            <div className="main-page-info-links">
+              
+            </div>  
         </div>
       </div>
     );

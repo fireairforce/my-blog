@@ -10,8 +10,9 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "dva": "^2.5.0-beta.2",
     "antd": "^3.15.0",
+    "antd-mobile": "^2.2.13",
+    "dva": "^2.5.0-beta.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
