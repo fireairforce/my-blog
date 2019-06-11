@@ -6,7 +6,9 @@ import './index.less';
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      
+    };
   }
   componentDidMount() {
     let sakura_point_vsh = `
@@ -1208,8 +1210,7 @@ class Home extends Component {
   render() {
     return (
       <div className="main-page">
-        <canvas id="sakura" />
-      
+          <canvas id="sakura" />
           <div className="main-page-info">
               <div className="main-page-info-header">
               <header>zoomdong's blog</header>
@@ -1223,7 +1224,7 @@ class Home extends Component {
                   </div>
                   <div className="main-page-info-site" key='b'>
                     <font aria-hidden="true">»</font>
-                    <a href="http://zoomdong.cn/" target='__blank'><Icon type='shop'/> 博客旧址</a>
+                    <a href="http://zoomdong.cn/" target='__blank'><Icon type='shop'/>博客旧址</a>
                   </div>
                </QueueAnim>
               <div className="main-page-info-site" key='c'>

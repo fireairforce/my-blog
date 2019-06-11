@@ -7,12 +7,14 @@ class Home extends React.Component{
       <Fragment>
           <div className="home-main">
             <div className="home-main-wrapper">
-              <div className="article">
-
-              </div>
-              <div className="article">
+              <div className="home-main-article">
                 
               </div>
+              <div className="home-main-article"></div>
+              <div className="home-main-article"></div>
+              <div className="home-main-article"></div>
+              <div className="home-main-article"></div>
+              <div className="home-main-article"></div>
             </div>
           </div>
       </Fragment>
