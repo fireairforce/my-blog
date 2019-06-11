@@ -6,22 +6,25 @@
       position: fixed;
       background: rgba(97, 97, 97, .3);
       width: 80%;
-      height: 60%;
       max-width: 440px;
-      max-height: 320px;
       z-index: 10;
       border-radius: 12px;
       &-header {
         margin-top: 20px;
-        text-align: center;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         header {
           display: inline-block;
           color: #fff;
           font-size: 28px;
           font-weight: bold;
+          text-align: center;
+          margin:0 20px 0 20px;
         }
         img {
-          margin-left: 20px;
           width: 50px;
           height: 50px;
           border-radius: 100%;

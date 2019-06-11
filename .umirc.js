@@ -1,5 +1,7 @@
 const path = require('path')
 
+const route = (config) => path.resolve(__dirname,config)
+
 export default {
   disableCSSModules: true,
   ignoreMomentLocale: true,
@@ -20,8 +22,9 @@ export default {
     }],
   ],
   alias: {
-    utils: path.resolve(__dirname, '/src/utils'),
-    components: path.resolve(__dirname, '/src/components'),
-    layouts:path.resolve(__dirname,'/src/layouts')
+    utils: route('/src/utils'),
+    components: route('/src/components'),
+    layouts: route('/src/layouts'),
+    style: route('/src/style')
   }
 }
