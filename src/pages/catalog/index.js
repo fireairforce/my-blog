@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 
-
 class CataLog extends React.Component{
     render(){
         return(

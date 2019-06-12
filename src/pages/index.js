@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Link from 'umi/link';
 import { Icon } from 'antd';
+import QueueAnim from 'rc-queue-anim';
 import './index.less';
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      
+    };
   }
   componentDidMount() {
     let sakura_point_vsh = `
@@ -1207,25 +1210,28 @@ class Home extends Component {
   render() {
     return (
       <div className="main-page">
-        <canvas id="sakura" />
-        <div className="main-page-info">
-            <div className="main-page-info-header">
-             <header>zoomdong's blog</header>
-             <img src="http://wdlj.zoomdong.xin/logo.jpg" alt="logo-pic"/>
-            </div> 
-            <h3>A FE coder and lover for programming</h3>
-            <div className="main-page-info-site">
-              <font aria-hidden="true">»</font>
-              <Link to='/home'><Icon type='home'/> Welcome to my blog</Link>
-            </div>
-            <div className="main-page-info-site">
-              <font aria-hidden="true">»</font>
-              <a href="http://zoomdong.cn/" target='__blank'><Icon type='shop'/> 博客旧址</a>
-            </div>
-            <div className="main-page-info-links">
-              
-            </div>  
-        </div>
+          <canvas id="sakura" />
+          <div className="main-page-info">
+              <div className="main-page-info-header">
+              <header>zoomdong's blog</header>
+              <img src="http://wdlj.zoomdong.xin/logo.jpg" alt="logo-pic"/>
+              </div> 
+              <h3>A FE coder and lover for programming</h3>
+                <QueueAnim delay={300} className="queue-simple">
+                  <div className="main-page-info-site" key="a">
+                    <font aria-hidden="true">»</font>
+                    <Link to='/home'><Icon type='home'/> Welcome to my blog</Link>
+                  </div>
+                  <div className="main-page-info-site" key='b'>
+                    <font aria-hidden="true">»</font>
+                    <a href="http://zoomdong.cn/" target='__blank'><Icon type='shop'/>博客旧址</a>
+                  </div>
+               </QueueAnim>
+              <div className="main-page-info-site" key='c'>
+                
+              </div>  
+          </div>
+       
       </div>
     );
   }

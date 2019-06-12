@@ -1,12 +1,1 @@
-
-html, body, #root {
-  height: 100%;
-  box-sizing: content-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  font-family: "MicroSoft Yahei"
-}
+@import 'style/index.less';

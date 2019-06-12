@@ -2,6 +2,8 @@ import { Link,withRouter } from 'react-router-dom';
 import { Menu,Icon } from 'antd';
 import { Popover } from 'antd-mobile';
 import { useState } from 'react';
+import Texty from 'rc-texty';
+import 'rc-texty/assets/index.css';
 import './index.less';
 
 const Item = Popover.Item;
@@ -16,7 +18,7 @@ function Header(props){
                     <img src="http://wdlj.zoomdong.xin/blog/touxiang.jpg" alt="logo"/>
                   </div>
                   <div className="layout-header-container-word">
-                    <p className="word-color">zoomdong's blog</p>
+                    <p className="word-color"><Texty>zoomdong's blog</Texty></p>
                   </div>
               </Link>
                 <div className="layout-header-container-nav">
