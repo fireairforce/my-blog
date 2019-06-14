@@ -1227,9 +1227,9 @@ class Home extends Component {
                     <a href="http://zoomdong.cn/" target='__blank'><Icon type='shop'/>博客旧址</a>
                   </div>
                </QueueAnim>
-              <div className="main-page-info-site" key='c'>
+              {/* <div className="main-page-info-site" key='c'>
                 
-              </div>  
+              </div>   */}
           </div>
        
       </div>
