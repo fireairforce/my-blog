@@ -62,10 +62,18 @@ function Header(props){
                       overlayClassName="fortest"
                       visible={visible}
                       overlay={[
-                        (<Item key="home" value="home">首页</Item>),
-                        (<Item key="catalog" value="catalog">存档</Item>),
-                        (<Item key="link" value="link" >友链 </Item>),
-                        (<Item key="about" value="about">关于</Item>),
+                        (<Item key="home" value="home"><Icon 
+                          type="home" 
+                          theme="twoTone" 
+                        /> 首页</Item>),
+                        (<Item key="catalog" value="catalog"><Icon 
+                        type="mail" 
+                        theme="twoTone" 
+                        twoToneColor="#52c41a"
+                      /> 存档</Item>),
+                        (<Item key="link" value="link" ><Icon type="star" theme="twoTone"/> 友链 </Item>),
+                        (<Item key="about" value="about">
+                           <Icon type="heart" theme="twoTone" twoToneColor="#eb2f96"/> 关于 </Item>),
                       ]}
                       align={{
                         overflow: { adjustY: 0, adjustX: 0 },
